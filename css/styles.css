@@ -1,0 +1,254 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px "century gothic","Trebuchet MS";
+	color: #555;
+}
+
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 1px 1px #3f51b5;
+}
+
+a.btn {
+	border-radius: 4px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3f51b5;
+	opacity: 1;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #ffffff;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+
+header nav {
+	display: flex;
+	margin-right: -15px;
+}
+
+header nav li {
+	margin: 0 15px;
+}
+ul {
+    list-style: none;
+}
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section h3.title {
+    font-weight: bold;
+    font-size:32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #3f51b5;
+}
+section p {
+    max-width: 775px;
+    line-height: 2;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #3f51b5;
+    margin-bottom: 50px; 
+}
+
+/*Hero Styles*/
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+	background-image: url(https://images.unsplash.com/photo-1415378102122-81ca7015e28b?auto=format&fit=crop&w=2978&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+
+.hero h1 {
+	font-weight: bold;
+	font-size: 60px;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px #3f51b5;
+}
+
+.hero h3 {
+	font-size: 28px; 
+	margin-bottom: 40px;
+	text-shadow: 1px 1px #3f51b5;
+}
+
+.hero a.btn {
+	padding: 15px 30px;
+}
+
+.hero-content-area {
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+.heiks .grid li {
+    height: 350px;
+    padding: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.bg-img-2 {
+    	background-image: url(https://images.unsplash.com/photo-1445964977039-53a5111a8583?auto=format&fit=crop&w=2102&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+.bg-img-3 {
+    	background-image: url(https://images.unsplash.com/photo-1480779735619-f73b30fdc062?auto=format&fit=crop&w=934&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+.bg-img-4 {
+    	background-image: url(https://images.unsplash.com/photo-1501724326152-7a82bf5eae72?auto=format&fit=crop&w=1879&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+.bg-img-5 {
+        background-image: url(https://images.unsplash.com/photo-1440262206549-8fe2c3b8bf8f?auto=format&fit=crop&w=1650&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+.small {
+    flex-basis: 30%;
+}
+.large {
+    flex-basis: 70%;
+}
+section:not(.hero):nth-child(even){
+    background-color: #f5f5f5;
+}
+
+.features .grid li {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 20px;
+}
+.features .grid h4 {
+    color: #3f51b5;
+    font-size: 25px;
+    margin: 15px 0;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3f51b5;
+    color: #ffffff;
+    padding: 20px 0;
+}
+footer ul {
+    display: flex;
+}
+footer ul li {
+    margin-left: 28px;
+}
+footer p {
+    font-size: 14px;
+    align-self: center;
+}
+@media (max-width: 600px){
+        header {
+        padding: 20px 50px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 800px){
+    section {
+        padding: 50px 20px;
+    }
+    .hero {
+        min-height: 600px;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero h3 {
+        font-size: 24px;
+    }
+     li.small, li.large {
+        flex-basis: 100%;
+        max-width: 330px;
+        min-width: 330px;
+    }
+    .features .grid li {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 1100px){
+    .heiks .grid .small, .large {
+        flex-basis: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
